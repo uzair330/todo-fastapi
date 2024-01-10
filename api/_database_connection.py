@@ -7,8 +7,7 @@ load_dotenv(find_dotenv())
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 
-database_url = os.getenv("DATABASE_URL")
-if database_url is None:
+if DATABASE_URL is None:
     print("DATABASE_URL not set")
 else:
     engine = create_engine(DATABASE_URL, echo=True)
