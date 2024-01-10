@@ -16,7 +16,7 @@ const Todos = async () => {
 const Home = async () => {
   const todos = await Todos();
   return (
-    <div className="flex flex-col mx-auto max-w-7xl mt-20">
+    <div className="flex flex-col mx-auto max-w-7xl mt-24">
     {
         Array.isArray(todos) ? todos.map((todo: TodosType) => (
             <div key={todo.id}>
